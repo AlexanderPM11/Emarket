@@ -1,0 +1,12 @@
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\bin\Debug\net5.0\Emarket.Core.Domain.deps.json
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\bin\Debug\net5.0\Emarket.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\bin\Debug\net5.0\ref\Emarket.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\bin\Debug\net5.0\Emarket.Core.Domain.pdb
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.AssemblyInfo.cs
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\ref\Emarket.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Domain\obj\Debug\net5.0\Emarket.Core.Domain.pdb

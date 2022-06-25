@@ -1,0 +1,16 @@
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.deps.json
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Aplication.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Aplication.pdb
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Domain.pdb
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
