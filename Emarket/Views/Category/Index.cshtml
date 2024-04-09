@@ -1,0 +1,49 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Categories
+@model List<CategoryViewModel>
+@{
+    ViewData["Title"] = "Category";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card cardCont_Cate">
+                <div class="card-header bg-primary">
+                    <h3 class="text-white">Mant. de categoria</h3>
+                </div>
+                <div class="contBtnCreate contBtnCategorieCreate">
+                    <a class="btn btn-outline-primary btn createAddsew" asp-controller="Category" asp-action="Create">Crear nueva categoria</a>
+
+                </div>
+                <div class="row">
+                    @if (Model.Count != 0 || Model != null)
+                    {
+                        @foreach (CategoryViewModel item in Model)
+                        {
+                            <div class="col-lg-4 col-md-6 my-3 d-flex">
+                                <div class="card card_Adds  h-100 w-100">
+
+                                    <div class="card-body">
+                                        <h3>@item.Name</h3>
+                                        <p class="card-text"> <b> Descripcion:</b> @item.Description</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Editar</a>
+                                                <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Borrar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <h2>No hay anuncios</h2>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            

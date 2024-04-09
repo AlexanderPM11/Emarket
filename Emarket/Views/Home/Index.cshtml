@@ -1,0 +1,116 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Adds
+@using Emarket.Core.Aplication.Viewmodels.Categories
+@model List<AddsViewModel>
+@{
+    ViewData["Title"] = "Category";
+}
+
+<div class="container">
+
+    <div class="row">
+       
+        <div class="card-header bg-primary">
+            <h3 class="text-white">Filtros</h3>
+        </div>
+        <div class="card shadow-sm content_Form_Filter">
+            <div class="ContFormFilter">
+                <form asp-controller="Home" asp-action="Index" method="post" class="formCategories">
+                    <div class="input-group">
+                        <h5 class="title_Filter">Categoria articulo</h5>
+                        <select class="form-select" aria-label="Default select example" name="CategoriesId">
+                            <option selected value="0">Todas</option>
+                            @if (ViewBag.Categories != null)
+                            {
+                                @foreach (var item in ViewBag.Categories as IList<CategoryViewModel>)
+                                {
+                                    <option value="@item.Id"> @item.Name</option>
+                                }
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-primary">Filtrar</button>
+                    </div>
+                </form>
+
+                <form asp-controller="Home" asp-action="Index" method="post" class="formAdds">
+                    <div class="input-group">
+                        <h5 class="title_Filter">Nombre articulo</h5>
+                        <select class="form-select" aria-label="Default select example" name="AddsName">
+                            <option selected>Todas</option>
+                            @if (ViewBag.Adds != null)
+                            {
+                                @foreach (var item in ViewBag.Adds as IList<AddsViewModel>)
+                                {
+                                    <option value="@item.NameArticul"> @item.NameArticul</option>
+                                }
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-primary">Filtrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col-12">
+        <div class="card cardCont_Cate">
+            <div class="row">
+                
+
+                @if (Model.Count > 0)
+                {
+                    
+
+                    @foreach (AddsViewModel item in Model)
+                    {
+                        string imge = item.Image;
+                        if (item.Image == null || item.Image == "")
+                        {
+                            imge = item.Image2;
+                            if (item.Image2 == null || item.Image2 == "")
+                            {
+                                imge = item.Image3;
+                                if (item.Image3 == null || item.Image3 == "")
+                                {
+                                    imge = item.Image4;
+                                }
+                            }
+
+                        }
+                        <div class="col-lg-4 col-md-6 my-3 d-flex">
+                            <div class="card card_Adds  h-100 w-100">
+                                <div class="card-body">
+                                    <img src="@imge" class="card-img-top img_cad" alt="Alternate Text" />
+                                    <h3>@item.NameArticul</h3>
+                                    <p class="card-text"> <b>Categoria:</b>  @item.Category</p>
+                                    <p class="card-text"><b>Descripcion:</b>  @item.DescripCategory</p>
+                                    <p class="card-text"><b>Precio:</b>  $@item.Price</p>
+                                    <div class="btn-group">
+                                        <a asp-controller="Adds" asp-action="DetailsAdd" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Ver detalles</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    }
+                }
+                else
+                {
+                    <div class="card-header bg-primary">
+                        <h3 class="text-white">No hay anuncio</h3>
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+

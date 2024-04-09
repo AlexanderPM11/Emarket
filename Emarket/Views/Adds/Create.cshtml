@@ -1,0 +1,94 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Adds
+@model SaveAddViewModel
+
+@{
+    bool editMode = Model.Id == 0 ? true : false;
+    ViewData["Title"] = "Guardar producto";
+}
+
+<div class="row contCardEditAdds">
+    @if (Model.Categories.Count == 0)
+    {
+        <div class="card-header bg-dark text-light">
+            <h4>No se puede crear el anuncion porque no hay categoria creada</h4>
+            <a asp-controller="Adds" asp-action="Index" class="btn btn-warning">Volver atras</a>
+            <a class="btn btn-primary" asp-controller="Category" asp-action="Create">Crear nueva categoria</a>
+        </div>
+    }
+    else
+    {
+<div class="col-lg-4 col-md-6 my-3 d-flex">
+    <div class="card card_Adds  h-100 w-100">
+        <div class="card-header bg-primary text-light">
+            <h4>@(editMode ? "Creando un nuevo producto" : $"Editando el producto: {Model.NameArticul}")</h4>
+
+        </div>
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data" asp-controller="Adds" asp-action="@(editMode ? "Create" : "Edit")">
+
+                <div class="mb-3">
+                    <label asp-for="NameArticul" class="form-label">Nombre Articulo: </label>
+                    <input type="text" asp-for="NameArticul" class="form-control">
+                    <span asp-validation-for="NameArticul" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File1" class="form-label">Seleccione la imagen 1: </label>
+                    @if (editMode == false && Model.Image != "")
+                    {
+                        <img src="@(Model.Image)" class="card-img-top img_cad" alt="Alternate Text" />
+                    }
+                    <input asp-for="File1" class="form-control" />
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File2" class="form-label">Seleccione la imagen 2: </label>
+                    @if (editMode == false && Model.Image1 != "")
+                    {
+                        <img src="@(Model.Image1)" class="card-img-top img_cad" alt="Alternate Text" />
+                    }
+                    <input asp-for="File2" class="form-control" />
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File3" class="form-label">Seleccione la imagen 3: </label>
+                    @if (editMode == false && Model.Image2 != "")
+                    {
+                        <img src="@(Model.Image2)" class="card-img-top img_cad" alt="Alternate Text" />
+                    }
+                    <input asp-for="File3" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File4" class="form-label">Seleccione la imagen 4: </label>
+                    @if (editMode == false && Model.Image3 != "")
+                    {
+                        <img src="@(Model.Image3)" class="card-img-top img_cad" alt="Alternate Text" />
+                    }
+                    <input asp-for="File4" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label">Precio: </label>
+                    <input asp-for="Price" class="form-control"></input>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="CategoryId" class="form-label">Categoria: </label>
+                    <select asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))" class="form-select">
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a asp-controller="Adds" asp-action="Index" class="btn btn-warning">Volver atras</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+    }
+
+</div>
+        </div>
+

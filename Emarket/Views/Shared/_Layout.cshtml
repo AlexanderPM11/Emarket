@@ -1,0 +1,66 @@
+﻿@using  Microsoft.AspNetCore.Http;
+@using  Emarket.Core.Aplication.Helpers;
+@using Emarket.Core.Aplication.Viewmodels.Users;
+@inject IHttpContextAccessor httpContexAccesor;
+
+@{UserViewModel user = httpContexAccesor.HttpContext.Session.Get<UserViewModel>("user");}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Emarket</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css?1.2" />
+    <script src="https://kit.fontawesome.com/3762365bc6.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark menuNav">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" asp-area="" asp-controller="@(user!=null?"Home":"User")" asp-action="Index"><b>Emarket</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars bar_Mneu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        @if (user != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Adds" asp-action="Index"> <b>Mis anuncios</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Category" asp-action="Index"> <b>Categoria</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="User" asp-action="LogOut"> <b>Cerrar sección</b> </a>
+                            </li>
+                        }
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer bg-dark text-muted">
+        <div class="container text-white">
+            All rights reserved &copy; @DateTime.Now.Year - Emarket By <a target="_blank" href="https://alexportaf.herokuapp.com/"> Alexander Polanco</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

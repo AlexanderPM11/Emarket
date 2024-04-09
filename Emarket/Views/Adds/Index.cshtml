@@ -1,0 +1,71 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Adds
+@model List<AddsViewModel>
+@{
+    ViewData["Title"] = "Anuncio";
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <h3 class="text-white">Mant. de anuncio</h3>
+                </div>
+                <div class="card-body">
+                    <div class="contBtnCreate ">
+                        <a class="btn btn-outline-primary btn createAddsew" asp-controller="Adds" asp-action="Create">Crear nuevo anuncio</a>
+
+                    </div>
+                        
+                    <div class="row">
+                        @if (Model.Count != 0 || Model != null)
+                        {
+                            @foreach (AddsViewModel item in Model)
+                            {
+                                string imge = item.Image;
+                                if (item.Image == null || item.Image == "")
+                                {
+                                    imge = item.Image2;
+                                    if (item.Image2 == null || item.Image2 == "")
+                                    {
+                                        imge = item.Image3;
+                                        if (item.Image3 == null || item.Image3 == "")
+                                        {
+                                            imge = item.Image4;
+                                        }
+                                    }
+
+                                }
+                                <div class="col-lg-4 col-md-6 my-3 d-flex">
+                                    <div class="card card_Adds  h-100 w-100">
+
+                                        <div class="card-body">
+                                            <img src="@imge" class="card-img-top img_cad" alt="Alternate Text" />
+                                            <h3>@item.NameArticul</h3>
+                                            <p class="card-text"> <b>Categoria:</b>  @item.Category</p>
+                                            <p class="card-text"> <b>  Descripcion:      </b> @item.DescripCategory</p>
+                                            <p class="card-text"> <b>  Precio:      </b> $@item.Price</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a asp-controller="Adds" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Editar</a>
+                                                    <a asp-controller="Adds" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Borrar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                  </div>
+                            }
+                            }
+                            else
+                            {
+                            <h2>No hay anuncios</h2>
+                            }
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

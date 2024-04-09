@@ -1,0 +1,107 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Adds
+@using Emarket.Core.Aplication.Viewmodels.Categories
+@model List<AddsViewModel>
+@{
+    ViewData["Title"] = "DetailsAdd";
+    string imgDefault = "https://elitebba.com/wp-content/uploads/2017/04/default-image.jpg";
+}
+
+
+<div class="col-12">
+   
+    <div class="card-header bg-primary">
+        <h3 class="text-white">Detalles del anuncio</h3>
+    </div>
+
+    <div class="row">
+
+        @if (Model.Count > 0)
+        {
+
+            @foreach (AddsViewModel item in Model)
+            {
+                <div class="col-lg-4 col-md-6 my-3 d-flex card_Carousel">
+                    <div class="card card_Adds  h-100 w-100">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="@(item.Image==null || item.Image==""?imgDefault:item.Image)" class="d-block w-100 card-img-top img_cad" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="@(item.Image2==null || item.Image2==""?imgDefault:item.Image2)" class="d-block w-100 card-img-top img_cad" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src=" @(item.Image3 == null || item.Image3 == "" ? imgDefault : item.Image3)" class="d-block w-100 card-img-top img_cad" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src=" @(item.Image4 == null || item.Image4 == "" ? imgDefault : item.Image4)" class="d-block w-100 card-img-top img_cad" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <h3>@item.NameArticul</h3>
+                            <p class="card-text"> <b>Categoria:</b>  @item.Category</p>
+                            <p class="card-text"><b>Descripcion:</b>  @item.DescripCategory</p>
+                            <p class="card-text"><b>Precio:</b>  @item.Price</p>
+                            <p class="card-text"><b>Fecha de publicacion:</b>  @item.fechaPubli</p>
+                            <p class="card-text"><b>Nombre del anunciante:</b>  @item.NameAnunciante</p>
+                            <p class="card-text"><b>Coreo del anunciante:</b>  @item.Email</p>
+                            <p class="card-text"><b>Teléfono del anunciante:</b>  @item.Phone</p>
+
+                            <div class="btn-group">
+                                <a asp-controller="Home" asp-action="Index" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Regresar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="card-header bg-primary">
+                <h3 class="text-white">No hay anuncio</h3>
+            </div>
+        }
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+

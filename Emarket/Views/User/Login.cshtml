@@ -1,0 +1,36 @@
+﻿@using Emarket.Core.Aplication.Viewmodels.Users
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid">
+
+    <div class="row row_ContCreateUsers">
+        <i class="fa-solid fa-user font_User"></i>
+        <div class="col-lg-4 col-md-6 my-3 d-flex">
+            <div class="card card_Adds  h-100 w-100">
+                <div class="card-header bg-dark text-light">
+                    <h4>Login</h4>
+                </div>
+                <div class="card-body">
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    <form method="post" asp-controller="User" asp-action="Index">
+                        <div class="mb-3">
+                            <label asp-for="Username" class="form-label">Nombre del usuario</label>
+                            <input asp-for="Username" class="form-control" id="Username" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Contraseña</label>
+                            <input asp-for="Password" class="form-control" id="Username" aria-describedby="emailHelp">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Logiarme</button>
+                        <a class="btn btn-success" asp-area="" asp-controller="User" asp-action="Register">Registrate</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
