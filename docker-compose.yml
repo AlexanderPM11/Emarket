@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  web:
+    image: emarket-web:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-8080}:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - UseInMemoryDatabase=false
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=EmarketDb;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - emarket-uploads:/app/wwwroot/Image
+    restart: always
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+    ports:
+      - "1433:1433"
+    volumes:
+      - emarket-db-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "${MSSQL_SA_PASSWORD}", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+volumes:
+  emarket-uploads:
+  emarket-db-data:

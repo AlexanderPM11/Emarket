@@ -1,7 +1,7 @@
-﻿@using Emarket.Core.Aplication.Viewmodels.Users
+@using Emarket.Core.Aplication.Viewmodels.Users
 @model LoginViewModel
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login";
 }
 
 <div class="container-fluid">
@@ -22,11 +22,14 @@
                         </div>
                         <div class="mb-3">
                             <label asp-for="Password" class="form-label">Contraseña</label>
-                            <input asp-for="Password" class="form-control" id="Username" aria-describedby="emailHelp">
+                            <input asp-for="Password" type="password" class="form-control" id="Password">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Logiarme</button>
-                        <a class="btn btn-success" asp-area="" asp-controller="User" asp-action="Register">Registrate</a>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
+                            <button type="submit" class="btn btn-primary">Logiarme</button>
+                            <a class="btn btn-success" asp-area="" asp-controller="User" asp-action="Register">Registrate</a>
+                            <button type="button" class="btn btn-outline-info" onclick="fillTestCredentials()">Credenciales de Prueba</button>
+                        </div>
 
                     </form>
                 </div>
@@ -34,3 +37,17 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        function fillTestCredentials() {
+            var usernameField = document.getElementById('Username');
+            var passwordField = document.getElementById('Password');
+            if (usernameField && passwordField) {
+                usernameField.value = 'testuser';
+                passwordField.value = 'password123';
+            }
+        }
+    </script>
+}
+

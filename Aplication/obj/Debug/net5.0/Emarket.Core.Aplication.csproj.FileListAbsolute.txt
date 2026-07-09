@@ -27,3 +27,19 @@ C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Aplication\obj\Debug\net5.0\refint\Emarket.Core.Aplication.dll
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.pdb
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Aplication\obj\Debug\net5.0\ref\Emarket.Core.Aplication.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\bin\Debug\net5.0\Emarket.Core.Aplication.deps.json
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\bin\Debug\net5.0\Emarket.Core.Aplication.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\bin\Debug\net5.0\Emarket.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\bin\Debug\net5.0\Emarket.Core.Domain.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\bin\Debug\net5.0\Emarket.Core.Domain.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.sourcelink.json
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket..C913A433.Up2Date
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\refint\Emarket.Core.Aplication.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\Emarket.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Aplication\obj\Debug\net5.0\ref\Emarket.Core.Aplication.dll

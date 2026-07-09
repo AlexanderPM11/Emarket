@@ -32,3 +32,21 @@ C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\refint\Emarket.Infrastructure.Persistence.dll
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
 C:\Users\alexa\OneDrive\Escritorio\Langues Programing Project\My Project\EMarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.deps.json
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Aplication.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Domain.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Core.Domain.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.sourcelink.json
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket..E204614B.Up2Date
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\refint\Emarket.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
+C:\Projects\Personal\Programacion\Emarket\Emarket\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net5.0": {
       "EntityFrameworkCore.Triggers/1.2.3": {
@@ -1167,19 +1167,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexa\\.nuget\\packages\\": {}
+    "C:\\Users\\Alexander\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Escritorio\\Langues Programing Project\\My Project\\Emarket\\Aplication\\Emarket.Core.Aplication.csproj",
+      "projectUniqueName": "C:\\Projects\\Personal\\Programacion\\Emarket\\Emarket\\Aplication\\Emarket.Core.Aplication.csproj",
       "projectName": "Emarket.Core.Aplication",
-      "projectPath": "C:\\Users\\alexa\\OneDrive\\Escritorio\\Langues Programing Project\\My Project\\Emarket\\Aplication\\Emarket.Core.Aplication.csproj",
-      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\OneDrive\\Escritorio\\Langues Programing Project\\My Project\\Emarket\\Aplication\\obj\\",
+      "projectPath": "C:\\Projects\\Personal\\Programacion\\Emarket\\Emarket\\Aplication\\Emarket.Core.Aplication.csproj",
+      "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Personal\\Programacion\\Emarket\\Emarket\\Aplication\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1187,14 +1192,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
+          "framework": "net5.0",
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\alexa\\OneDrive\\Escritorio\\Langues Programing Project\\My Project\\Emarket\\Emarket.Domain\\Emarket.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\alexa\\OneDrive\\Escritorio\\Langues Programing Project\\My Project\\Emarket\\Emarket.Domain\\Emarket.Core.Domain.csproj"
+            "C:\\Projects\\Personal\\Programacion\\Emarket\\Emarket\\Emarket.Domain\\Emarket.Core.Domain.csproj": {
+              "projectPath": "C:\\Projects\\Personal\\Programacion\\Emarket\\Emarket\\Emarket.Domain\\Emarket.Core.Domain.csproj"
             }
           }
         }
@@ -1208,10 +1216,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net5.0": {
+        "framework": "net5.0",
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http": {
@@ -1254,26 +1264,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
