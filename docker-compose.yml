@@ -11,7 +11,10 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - UseInMemoryDatabase=false
-      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=EmarketDb;User Id=sa;Password=${MSSQL_SA_PASSWORD:-YourStrongDefaultPassword123!};TrustServerCertificate=True;
+      - DB_SERVER=db,1433
+      - DB_NAME=EmarketDb
+      - DB_USER=sa
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD:-YourStrongDefaultPassword123!}
     depends_on:
       db:
         condition: service_healthy

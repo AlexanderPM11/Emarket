@@ -1,4 +1,4 @@
-﻿using Emarket.Core.Aplication.Interface;
+using Emarket.Core.Aplication.Interface;
 using Emarket.Core.Aplication.Interface.Repositories;
 using Emarket.Infrastructure.Persistence.Contexts;
 using Emarket.Infrastructure.Persistence.Repositories;
@@ -24,8 +24,21 @@ namespace Emarket.Infrastructure.Persistence
             }
             else
             {
+                string connectionString = confi.GetConnectionString("DefaultConnection");
+
+                // Retrieve environment variables at runtime to build the connection string dynamically
+                var dbServer = Environment.GetEnvironmentVariable("DB_SERVER") ?? "db,1433";
+                var dbName = Environment.GetEnvironmentVariable("DB_NAME") ?? "EmarketDb";
+                var dbUser = Environment.GetEnvironmentVariable("DB_USER") ?? "sa";
+                var dbPassword = Environment.GetEnvironmentVariable("MSSQL_SA_PASSWORD") ?? Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+                if (!string.IsNullOrEmpty(dbPassword))
+                {
+                    connectionString = $"Server={dbServer};Database={dbName};User Id={dbUser};Password={dbPassword};TrustServerCertificate=True;";
+                }
+
                 service.AddDbContext<EmarketContext>(options =>
-                options.UseSqlServer(confi.GetConnectionString("DefaultConnection")
+                options.UseSqlServer(connectionString
                 , m => m.MigrationsAssembly(typeof(EmarketContext).Assembly.FullName)));
             }
             #endregion

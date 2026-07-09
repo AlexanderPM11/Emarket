@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\WebApp.Emarket.props" />
-</Project>
