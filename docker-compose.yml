@@ -29,11 +29,13 @@ services:
     volumes:
       - emarket-db-data:/var/opt/mssql
     healthcheck:
-      test: [ "CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "${MSSQL_SA_PASSWORD}", "-Q", "SELECT 1" ]
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q \"SELECT 1\""]
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 10s
     restart: always
+
 
 volumes:
   emarket-uploads:
