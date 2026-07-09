@@ -29,12 +29,13 @@ services:
     volumes:
       - emarket-db-data:/var/opt/mssql
     healthcheck:
-      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q \"SELECT 1\""]
+      test: ["CMD-SHELL", "bash -c 'cat < /dev/null > /dev/tcp/127.0.0.1/1433'"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 10s
     restart: always
+
 
 
 volumes:
