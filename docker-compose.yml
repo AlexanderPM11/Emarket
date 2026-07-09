@@ -11,7 +11,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - UseInMemoryDatabase=false
-      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=EmarketDb;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=EmarketDb;User Id=sa;Password=${MSSQL_SA_PASSWORD:-YourStrongDefaultPassword123!};TrustServerCertificate=True;
     depends_on:
       db:
         condition: service_healthy
@@ -23,9 +23,10 @@ services:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD:-YourStrongDefaultPassword123!}
     # ports:
     #   - "1433:1433"
+
     volumes:
       - emarket-db-data:/var/opt/mssql
     healthcheck:
